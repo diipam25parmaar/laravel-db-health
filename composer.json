@@ -1,0 +1,22 @@
+{
+  "name": "your-vendor/laravel-db-health",
+  "description": "Database health checks for Laravel: EXPLAIN sampling, index usage, connection latency, and report generation.",
+  "type": "library",
+  "license": "MIT",
+  "require": {
+    "php": ">=8.0",
+    "illuminate/support": "^8.0|^9.0|^10.0|^11.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "DbHealth\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "DbHealth\\DbHealthServiceProvider"
+      ]
+    }
+  }
+}
